@@ -1,0 +1,69 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    transition-duration: 1s;
+    transition-property: width,borde-radius,background-color;
+    margin-left:auto;
+    margin-right: auto;
+    display: block;
+}
+.box:hover{
+    border-radius:20%;
+    background-color: black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 40%;
+    text-align: center;
+    font-size: 50px;
+    padding-top:20px;
+    color:white;
+    animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.one {
+    background-color: lightgreen;
+    transition-timing-function: linear;
+    color:lightgreen;
+}
+.two {
+    background-color: firebrick;
+    transition-timing-function: ease-in;
+    color:firebrick;
+}
+.three {
+    background-color: saddlebrown;
+    transition-timing-function: ease-out;
+    color:saddlebrown;
+}
+.four {
+    background-color: gold;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    color:gold;
+}
+section{
+    display: block;
+}
+section h1{
+    font-size: 50px;
+    display: block;
+    /* transition-duration: 1s; */
+    cursor: pointer;
+    text-align: center;
+    /* transition-duration: 2s; */
+    
+}
+h1:hover {
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    transform: rotate(360deg);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation
+}

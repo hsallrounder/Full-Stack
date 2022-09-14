@@ -1,0 +1,44 @@
+section {
+    border: 1px solid black;
+    justify-content: center;
+    text-align: center;
+    display: flexbox;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top:10%;
+    transition-duration: 1s;
+    transition-property: border-radius;
+    transition-delay: 2s;
+}
+h1 {
+    font-size: 5rem;
+}
+p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media screen and (max-width:720px) and (min-width:500px), (orientation:landscape)  {
+    h1 {
+        font-size: 3rem;
+    }
+    section {
+        background-color: bisque;
+    }
+}
+@media screen and (max-width:499px){
+    h1 {
+        font-size: 1.5rem;
+    }
+    section {
+        background-color: brown;
+        color: azure;
+    }
+}
+
+section:hover {
+    border-radius: 20%;
+    background-color: aliceblue;
+}
