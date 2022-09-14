@@ -1,0 +1,65 @@
+h1 {
+    border: 5px black solid;
+    border-radius: 5px;
+    text-align: center;
+}
+section {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 4px green solid;
+    height: 60vh;
+    width: 65vw;
+}
+
+section:hover {
+    background-color: aquamarine;
+    transition: 0.4s;
+}
+.border-div {
+    height: 200px;
+    border: 2px solid red;
+    background-color: yellow;
+}
+.border-div:hover {
+    background-color: green;
+    border-radius: 30px;
+}
+section:nth-of-type(2) {
+    margin-top: 2%;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    background-image: url(https://images.newscientist.com/wp-content/uploads/2022/03/23213550/SEI_95094085.jpg?width=800);
+    background-size: cover;
+}
+
+section:nth-of-type(3) div {
+    height: 50%;
+    width: 50%;
+    border: 10px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+    background-color: aquamarine;
+    border-radius: 50%;
+    display: block;
+}
+section:nth-of-type(3) div:hover {
+    border-radius: 1px;
+    border: 2px black solid;
+    background-color: red;
+    transition: 0.7s;
+}
+article {
+    font-size: 20px;
+}
+ul {
+    font-size:0.5rem;
+}
+
+h1:nth-of-type(1){
+    display: inline;
+}
+h1:nth-of-type(2) {
+    display: inline;
+}

@@ -1,0 +1,46 @@
+h1 {
+    color: red;
+}
+
+.heading {
+    color: aqua;
+}
+
+#h1 {
+    color: brown;
+}
+
+/* Specificity 
+ ID -> Attribute -> class -> Element */
+
+section{
+   color: blueviolet;
+   border: 10px black solid;
+}
+
+div {
+   height:150px;
+   width: 150px;
+   border: 3px black solid;
+}
+
+div:nth-of-type(1) {
+   background-color: #ee2211;
+}
+div:nth-of-type(2) {
+   background-color: rgb(44, 244, 32);
+}
+div:nth-of-type(3) {
+   background-color: rgba(44,40,247);
+   background-color: hsl(60, 30%, 65);
+}
+.hsl {
+   background-color: hsl(120, 0%, 50%);
+}
+
+p {
+   border: 3px solid black;
+   width: 40vw;
+   height: 40vw;
+   margin: 25% 33%;
+}

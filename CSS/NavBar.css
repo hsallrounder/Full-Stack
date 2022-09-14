@@ -1,0 +1,79 @@
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+html {
+
+    scroll-padding-top: 70px;
+
+    scroll-behavior: smooth;
+
+}
+
+/* Navigation bar */
+
+header {
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+.nav1 {
+
+    background-color: gray;
+
+    margin: 0 auto 0 auto;
+
+    width: 75%;
+
+    padding: 25px 0;
+
+    position: fixed;
+
+    height: 10%;
+
+}
+
+.nav1 ul {
+
+    list-style-type: none;
+
+    display: flex;
+
+    justify-content: right;
+
+}
+
+.nav1 ul a {
+
+    padding: 25px 25px;
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 120%;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.nav1 ul a:hover {
+
+    background-color: white;
+
+    color: black;
+
+    transition: 0.4s;
+
+    /* padding: 25px 25px; */
+
+}

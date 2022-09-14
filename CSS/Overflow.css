@@ -1,0 +1,76 @@
+.overflow-demo {
+    margin-top: 50px;
+    height: 50vh;
+    border: 1px solid black;
+    overflow: scroll;
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+ul li {
+    padding: 10px 10px 10px 10px;
+    border: 2px solid black;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+
+.news-image{
+    width: 90%;
+    height: 50vh;
+}
+
+.news-image img {
+    height: 300px;
+    width: 350px;
+    float: right;
+    padding-left: 50px;
+}
+.news-image p{
+    margin-left: 5px;
+    text-align: justify;
+}
+
+.flex-box {
+    height: 70vh;
+    width: 80vw;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    /* overflow: scroll; */
+    background-color: lightcoral;
+    justify-content: space-around;
+}
+
+.flex {
+    border: 1px solid black;
+    padding-top: 5px;
+    padding-top: 5px;
+    margin-left: 20px;
+    margin-right:20px;
+    margin-top:10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #fd4245;
+    color: white;
+    border-radius: 25px;
+    display: block;
+    height:20vh;
+    width:20vw;
+
+}
+
+.flex:nth-of-type(1) {
+    /* flex-grow: 1; */
+    align-self: flex-start;
+}
+.flex:nth-of-type(2) {
+    /* flex-basis:50px; */
+    /* flex-grow:1; */
+    align-self: flex-end;
+}
