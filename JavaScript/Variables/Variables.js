@@ -1,4 +1,5 @@
-a=true;
-b=10;
-c=2.5;
-console.log(a+" "+b+" "+c);
+let arr=[1,null,'yoyoyo',true,undefined];
+for(let i=0;i<arr.length;i++) {
+    str=`Type of ${arr[i]} is ${typeof(arr[i])}`;
+    alert(str);
+}
