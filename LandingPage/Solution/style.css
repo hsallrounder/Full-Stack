@@ -1,0 +1,64 @@
+body {
+    background-image: url(/LandingPage/Design/home-img.jpeg);
+    background-repeat: no-repeat;
+}
+
+* {
+    padding: 0 2.4w 0 2.4w;
+}
+
+html {
+
+    scroll-padding-top: 70px;
+
+    scroll-behavior: smooth;
+
+}
+
+header {
+
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    border-bottom: 1px solid rgba(211, 173, 127, 10)
+}
+
+.navbar {
+    color: aliceblue;
+    display: flex;
+    margin: 0 auto 0 20px;
+}
+
+.navbar ul a :hover {
+    transition: 1s;
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.list>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    display: flex;
+}
+
+.list ul li {
+    padding: 25px 25px;
+    display: inline-block;
+}
+
+.navbar ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 125%;
+}
+
+.navbar ul a:hover {
+    transition: 1s;
+    font-size: 180%;
+}
+
+.search li {
+    padding: 25px 25px;
+    display: inline-block;
+}
