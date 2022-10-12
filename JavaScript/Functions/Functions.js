@@ -96,4 +96,6 @@ while(true){
 }
 */
 
-console.log(str.substring(3));
+// console.log(str.substring(3));
+
+// console.log(str.slice(-15,-4));
