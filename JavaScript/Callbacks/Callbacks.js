@@ -13,22 +13,31 @@ add(2,3,print)
 
 const fs=require("fs");
 
-let count = 0;
 
-function print(err,data){
-    if(!err){
-        count += 1;
-        if(count < 6){
-            var pr=fs.readFile("q"+count+".txt",'utf-8',print);            
-        }
-        console.log(pr);
-    }
-}
-
-// Synchronous
 
 // Asynchronous
+
+// function callback(err,data){
+//     if(!err) console.log(data);
+// }
 
 // for(let i=1;i<=5;i++) {
 //     fs.readFile("q"+i+".txt",'utf-8',callback);
 // }
+
+// Synchronous
+
+let count = 0;
+function print(err,data){
+    count += 1;
+    if(count<6){
+        if(!err){
+            console.log(data);
+        }
+        else{
+            console.log(err);
+        }
+    }
+    fs.readFile("q"+(count+1)+".txt",'utf-8',print);            
+}
+fs.readFile("q1.txt",'utf-8',print);
