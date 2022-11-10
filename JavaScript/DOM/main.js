@@ -22,7 +22,7 @@ console.log(document.all[12].innerText);
 */
 
 // Querying Document
-
+/*
 let header=document.getElementById('header-title');
 
 header.style.backgroundColor='red';
@@ -33,9 +33,11 @@ header.style.backgroundColor='red';
 header.innerHTML = '<h3> hello world</h3>';
 
 console.log(header);
+*/
 
 // getElementByClassName
 
+/*
 var items = document.getElementsByClassName('list-group-item');
 
 console.log(items);
@@ -46,6 +48,8 @@ for(let i=0;i<items.length;i++){
 
     Object.assign(items[i].style,{backgroundColor:'red',fontWeight:'bold'})
 }
+*/
+
 // getElementByQuerySelector
 
 /*
@@ -54,6 +58,7 @@ var heading=document.querySelector('.title');
 heading.style.backgroundColor='green';
 */
 
+/*
 var heading=document.querySelectorAll('.title');
 
 console.log(heading);
@@ -61,3 +66,17 @@ console.log(heading);
 for(let i=0;i<heading.length;i++){
     heading[i].style.backgroundColor='green';
 }
+*/
+
+/*
+var ulp=document.querySelector('ul').parentNode;
+console.log(ulp);
+ulp.style.backgroundColor='pink';
+*/
+
+/*
+var body_p=document.querySelector('body').parentNode.parentNode;
+console.log(body_p);
+*/
+
+// Array.form
