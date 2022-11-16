@@ -80,3 +80,59 @@ console.log(body_p);
 */
 
 // Array.form
+
+
+/*
+// parent
+var itemList=document.getElementById("item");
+console.log(itemList.parentNode);
+itemList.parentNode.style.backgroundColor="LightGrey";
+console.log(itemList.parentElement);
+// child
+console.log(itemList.childNodes);
+console.log(itemList.children);
+itemList.children[1].style.backgroundColor="yellow";
+console.log(itemList.nextSibling);
+console.log(itemList.nextElementSibling);
+*/
+
+// Events
+
+// function buttonClick() {
+//     console.log('hello world');
+// }
+
+/*
+var button=document.querySelector('#btn');
+
+button.addEventListener('click',addEvent);
+
+function addEvent() {
+    // console.log('1');
+    var mainTitle=document.getElementById('main-title');
+    console.log(mainTitle);
+    mainTitle.innerText='changed';
+}
+function addEvent(e) {
+    console.log(e);
+    console.log(e.target);
+    console.log(e.clientX);
+    console.log(e.clientY);
+    console.log(e.offsetX);
+    console.log(e.offsetY);
+    console.log(e.ctrlKey);
+    console.log(e.altKey);
+    console.log(e.shiftKey);
+}
+*/
+
+// var form=document.getElementById('addForm');
+
+var button=document.addEventListener('submit',runEvent);
+
+function runEvent(e) {
+    
+    e.preventDefault();    
+    
+    console.log('1');
+}
