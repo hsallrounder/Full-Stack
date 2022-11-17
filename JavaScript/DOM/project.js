@@ -47,3 +47,13 @@ function addEvent(e) {
     itemList.appendChild(newItem);
 }
 
+itemList.addEventListener('click',removeEvent);
+
+function removeEvent(e) {
+    if(e.target.classList.contains('delete')){
+        if(confirm('delete krna hai?')){
+            var li=e.target.parentElement;
+            itemList.removeChild(li);
+        }
+    }
+}
