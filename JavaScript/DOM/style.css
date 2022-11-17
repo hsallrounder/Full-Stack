@@ -33,7 +33,6 @@ input[type="radio"]:checked{
     background-color: var(--radio-color);
 }
 
-
 #BabyPink{
     --radio-color:rgb(242,172,185);
 }
@@ -53,7 +52,6 @@ input[type="radio"]:checked{
 #Light{
     --radio-color:rgb(205,183,187);
 }
-
 
 :root:has(#Blue:checked){
     background-color: rgb(19,64,179);
