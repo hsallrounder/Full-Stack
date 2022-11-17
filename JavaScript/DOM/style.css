@@ -1,0 +1,9 @@
+.form-control{
+    margin:50px
+}
+
+.color-changer{
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
