@@ -23,3 +23,27 @@ themeColors.forEach((themeOption) => {
 })
 
 document.onload=applyTheme();
+
+// add items
+
+var form=document.getElementById('addForm');
+var itemList=document.getElementById('items');
+form.addEventListener('submit',addEvent);
+function addEvent(e) {
+    e.preventDefault();
+
+    var item=document.getElementById('main-input').value;
+    
+    var newItem=document.createElement('li');
+    newItem.className="list-group-item";
+    newItem.appendChild(document.createTextNode(item));
+
+    var dltButton=document.createElement('button');
+    dltButton.className="btn btn-danger btn-sm float-right delete";
+    dltButton.appendChild(document.createTextNode('X'));
+
+    newItem.appendChild(dltButton);
+
+    itemList.appendChild(newItem);
+}
+

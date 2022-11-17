@@ -147,17 +147,3 @@ function runEvent(e) {
     console.log("Event type: "+e.type);
 }
 */
-
-// to be done
-/*
-var button=document.querySelector('#addForm');
-button.addEventListener('click',runEvent);
-function runEvent(e) {
-    e.preventDefault();
-    var val=document.getElementById("item").value;
-    var ul = document.getElementById("items");
-    var li = document.createTextNode(val);
-    li.classList.add("list-group-item")
-    ul.appendChild(li);
-}
-*/
