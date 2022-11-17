@@ -1,9 +1,9 @@
 :root{
-    background-color: lightgrey;
+    background-color: var(--radio-color);
 }
 
 body{
-    background-color: lightgrey;
+    background-color: var(--radio-color);
 }
 
 .form-control{
@@ -33,6 +33,7 @@ input[type="radio"]:checked{
     background-color: var(--radio-color);
 }
 
+
 #BabyPink{
     --radio-color:rgb(242,172,185);
 }
@@ -53,3 +54,20 @@ input[type="radio"]:checked{
     --radio-color:rgb(205,183,187);
 }
 
+
+:root:has(#Blue:checked){
+    background-color: rgb(19,64,179);
+}
+
+:root:has(#BabyPink:checked){
+    background-color: rgb(242,172,185);
+}
+:root:has(#Dark:checked){
+    background-color: rgb(32,42,68);
+}
+:root:has(#Orange:checked){
+    background-color: rgb(227,110,19);
+}
+:root:has(#Light:checked){
+    background-color: rgb(205,183,187);
+}
