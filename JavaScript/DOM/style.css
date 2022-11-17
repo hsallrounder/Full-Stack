@@ -1,9 +1,29 @@
+:root{
+    background-color: lightgrey;
+}
+
+body{
+    background-color: lightgrey;
+}
+
 .form-control{
-    margin:50px
+    margin: 50px;
+    border: 0;
 }
 
 .color-changer{
     display: flex;
     gap: 20px;
     padding: 10px;
+    width: fit-content;
+    margin-inline: auto;
+    border: 0;
+}
+
+input[type="radio"]{
+    appearance: none;
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 2px solid;
+    border-radius: 50%;
 }
