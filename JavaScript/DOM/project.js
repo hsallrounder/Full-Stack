@@ -47,11 +47,13 @@ function addEvent(e) {
     itemList.appendChild(newItem);
 }
 
+// remove items
+
 itemList.addEventListener('click',removeEvent);
 
 function removeEvent(e) {
     if(e.target.classList.contains('delete')){
-        if(confirm('delete krna hai?')){
+        if(confirm('delete kr rhe ho?')){
             var li=e.target.parentElement;
             itemList.removeChild(li);
         }
