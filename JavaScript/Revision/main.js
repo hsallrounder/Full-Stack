@@ -61,19 +61,51 @@ export const moduleVar="exported variable";
 
 // error handling
 
-try{
+// try{
+//     console.log("try ctach start");
+//     setTimeout(()=>{
+//         sdffdsf;
+//     },1000);
+//     // ahdhasd;
 
-    console.log("try ctach start");
-    setTimeout(1/0);
-    // ahdhasd;
+//     console.log("try block ends");
 
-    console.log("try block ends");
+// }
+// catch(err){
+//     console.log(err.name);
+//     console.log(err.message);
+//     console.log(err.stack);
 
-}
-catch(err){
-    console.log(err.name);
-    console.log(err.message);
-    console.log(err.stack);
+//     // console.log("error aagya, abe error theek kar");
+// }
 
-    // console.log("error aagya, abe error theek kar");
-}
+// setTimeout(()=>{
+//     try {
+//         gagagg;
+//     } catch (err) {
+//         console.log("error aagya");
+//     }
+// },1000)
+
+// const error=new Error("isme error message aayega");
+
+// throw error;
+
+// let json="{name : 'john'}";
+// try{
+//     let arr=JSON.parse(json);
+//     console.log("mene dediya error ;)");
+// }
+// catch(err){
+//     console.log("JSON valid nhi h yaar :(");
+// }
+
+// let json='{"name" : "john"}';
+
+// try{
+//     let arr=JSON.parse(json);
+//     if(!arr.age) throw new Error("age nhi h beta");
+// }
+// catch(err){
+//     console.log(err.message);
+// }
