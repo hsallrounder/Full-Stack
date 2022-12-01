@@ -63,7 +63,17 @@ export const moduleVar="exported variable";
 
 try{
 
+    console.log("try ctach start");
+    setTimeout(1/0);
+    // ahdhasd;
+
+    console.log("try block ends");
+
 }
 catch(err){
-    
+    console.log(err.name);
+    console.log(err.message);
+    console.log(err.stack);
+
+    // console.log("error aagya, abe error theek kar");
 }
