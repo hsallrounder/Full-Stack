@@ -5,9 +5,13 @@
 // console.log(a);
 
 
+
+
 // module scope
 
-export const moduleVar="exported variable";
+// export const moduleVar="exported variable";
+
+
 
 
 // function scope
@@ -38,6 +42,9 @@ export const moduleVar="exported variable";
 
 // console.log(a);
 
+
+
+
 // function declaration
 
 // print();
@@ -46,6 +53,9 @@ export const moduleVar="exported variable";
 //     console.log("hello world");
 // }
 
+
+
+
 // function expression
 
 // print();
@@ -53,11 +63,17 @@ export const moduleVar="exported variable";
 
 // }
 
+
+
+
 // arrow function
 
 // let print = () => console.log("hello world");
 
 // print();
+
+
+
 
 // error handling
 
@@ -91,7 +107,7 @@ export const moduleVar="exported variable";
 
 // throw error;
 
-// let json="{name : 'john'}";
+// const json="{name : 'john'}";
 // try{
 //     let arr=JSON.parse(json);
 //     console.log("mene dediya error ;)");
@@ -100,7 +116,7 @@ export const moduleVar="exported variable";
 //     console.log("JSON valid nhi h yaar :(");
 // }
 
-// let json='{"name" : "john"}';
+// const json='{"name" : "john"}';
 
 // try{
 //     let arr=JSON.parse(json);
@@ -109,3 +125,165 @@ export const moduleVar="exported variable";
 // catch(err){
 //     console.log(err.message);
 // }
+
+
+
+
+// Object
+
+// const person={
+//     name:"kartik",
+//     age:25,
+//     hobbies:["football","irritate krna","petu"],
+//     "married hai":false,
+//     sayNmae: function() {
+//         console.log("hello world");
+//     }
+// }
+
+// console.log(person["married hai"]);
+
+// for(let key in person){
+//     console.log(person[key]);
+// }
+
+// console.log(Object.values(person));
+
+// let obj1={
+//     name:"john"
+// }
+// let obj2=obj1;
+
+// obj1=null;
+
+// console.log(obj1.name);
+
+
+// const person = {
+//     name : "kartik",
+//     age : 25,
+//     hobbies : ["football","irritate krna","petu"],
+//     "married hai" : false,
+//     sayNmae : function() {
+//         console.log("hello world");
+//     }
+// }
+
+// const person2 = {
+//     address : "new delhi",
+//     favColor : ["red","green","blue"],
+//     __proto__ : person
+// }
+
+// const person2=Object.create(person);
+
+// console.log(person2.name);
+
+
+
+
+// this key
+
+// function fun() {
+//     console.log(this);    // window/global object
+//     return 1;
+// }
+// fun();
+
+// const p1={
+//     a:2,
+//     b:3,
+
+//     p2:{
+//         c:4,
+//         d:5,
+//         f2:function(){
+//             console.log(this);
+//         }
+//     },
+    
+//     fun:function() {
+//         this.a=3;
+//         console.log(this);
+//     }
+// }
+
+// console.log(p1.fun());
+
+
+// const p1={
+//     a:1,
+//     b:2,
+//     c:3,
+// }
+
+
+// const p2={
+//     d:4,
+//     e:5,
+//     fun:function() {
+//         console.log(this);
+//     }
+// }
+// console.log(p2.fun.call(p1));
+
+// let newFun=p2.fun.bind(p1);
+
+// console.log(newFun());
+
+
+
+
+let arr=[1,2,3,4,5,6];
+
+// Map
+// let newArr=arr.map((element,index,array));
+// console.log(newArr);
+
+
+// PollyFill
+
+// function newPollyFill(arr,cb) {
+//     let newArr=[];
+//     for(let i=0;i<arr.length;i++) {
+//         newArr.push(cb(arr[i]));
+//     }
+//     return newArr
+// }
+
+// function cb(x) {
+//     return x*x;
+// }
+
+// console.log(newPollyFill(arr,cb));
+
+
+
+
+// Filter
+
+// let fArray=arr.filter((x)=>x%2==0);
+// console.log(fArray);
+
+// Filter PollyFill
+
+// function newPollyFill(arr,cb) {
+//     let newArr=[];
+//     for(let i=0;i<arr.length;i++) {
+//         if(cb(arr[i])) newArr.push(arr[i]);
+//     }
+//     return newArr
+// }
+
+// function cb(x) {
+//     return x%2==0;
+// }
+// console.log(newPollyFill(arr,cb));
+
+
+
+
+// Reduce
+
+let rArray=arr.reduce((sum,ele)=>sum+ele,0);
+console.log(rArray);
