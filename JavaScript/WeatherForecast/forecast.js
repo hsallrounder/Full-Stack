@@ -14,7 +14,7 @@ xhr.onerror = function () {
 
 // https://openweathermap.org/current
 
-let APIkey; // {your key};
+let APIkey="da4656313e00762e8eec71cf92c67d88"; // {your key};
 document.getElementById("submit").addEventListener('click',(e)=>{
     let cityname=document.getElementById('input').value;
     const URL="https://api.openweathermap.org/data/2.5/weather?q=" +cityname+ "&appid="+APIkey;    
