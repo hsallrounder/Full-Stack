@@ -1,7 +1,10 @@
+// install express
+// npm install express --save
+
 const http = require('http')
 const server = http.createServer((req,res) => {
     if(req.url === '/home') {
-        res.write("hehehehe");
+        res.write("Home");
         res.end();
     }
     else if(req.url === '/contact') {
