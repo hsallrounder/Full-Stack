@@ -10,7 +10,20 @@
     <h1>GET vs POST</h1>
 
     <h2>Get Request</h2>
-    <form>
+    <form method="get" action="user">
+
+        <label for="user">Username</label>
+        <input type="text" id="user" name="user">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+
+        <button>Submit</button>
+    </form>
+    <br>
+
+    <h2>Post Request</h2>
+    <form method="post" action="/user">
 
         <label for="user">Username</label>
         <input type="text" id="user" name="user">
