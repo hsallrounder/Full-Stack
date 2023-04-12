@@ -1,7 +1,7 @@
 import React from 'react'
 import './Person.css'
 
-export const Person = () => {
+const Person = () => {
     let luckyNumber = 7;
 
     let randomNumber = Math.floor(Math.random() * 10)
